@@ -16,13 +16,14 @@
 
 button {
     color: black;
-    font-size: 30px;
-    border-radius: 10px;
+    font-size: 25px;
+    border-radius: 15px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background: rgb(255,255,255); 
     margin: 10px;
+    padding: 0 50px 0 50px;
     font-family: 'Raleway', sans-serif;
-    
+    mix-blend-mode: screen;
 } 
 
 .buttontext {
@@ -47,4 +48,17 @@ li {
     margin: 0 auto;
     position: relative;
     top: 30%;
+}
+
+img {
+    width: auto;
+    height: 300px;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.text p {
+    font-size: 20px;
 }
