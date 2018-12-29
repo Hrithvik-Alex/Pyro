@@ -1,0 +1,50 @@
+
+.super {
+    /* background: no-repeat; */
+    background-image: rgba(191, 47, 110, 0.6), url('../../../assets/bg.png'); /*fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(191, 47, 110, 0.6), rgba(58, 77, 252, 0.6)), url('../../../assets/bg.png'); 
+    background: linear-gradient(to bottom, rgba(191, 47, 110, 0.6), rgba(58, 77, 252, 0.6)),url('../../../assets/bg.png'); 
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    color: black;
+    font-size: 30px;
+    border-radius: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(255,255,255); 
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    
+} 
+
+.buttontext {
+    opacity: 0;
+}
+
+ul {
+    
+    list-style: none;
+    display: inline-block;
+}
+
+li {
+    text-align: center;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+}
