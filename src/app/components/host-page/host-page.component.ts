@@ -12,4 +12,7 @@ export class HostPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  handleText(event: Event, example: string){
+    console.log("Hello " + example + "!");
+  }
 }

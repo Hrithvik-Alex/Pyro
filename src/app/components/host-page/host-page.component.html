@@ -5,13 +5,13 @@
           <img src='../../../assets/logo.png'>
       </div>
       <div class="text">
-          <p>Enjoy music together.</p>
+          <p>Enter your code.</p>
       </div>
-      <button routerLink="/host">
-        <img src="../../../assets/spotify.png">
-        <div>
-          Login with Spotify
-        </div>
+
+      <input #code>
+
+      <button routerLink="/host" (click)="handleText($event, code.value)">
+        Create Room
       </button> 
   </div>
 </div>
