@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { JoinPageComponent } from './components/join-page/join-page.component';
 import { HostPageComponent } from './components/host-page/host-page.component';
+import { AngularFireModule } from '@angular/fire'
+import { AngularFireDatabaseModule } from '@angular/fire/database'
+import { AngularFireAuthModule } from '@angular/fire/auth'
+
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,9 @@ import { HostPageComponent } from './components/host-page/host-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

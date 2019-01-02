@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseService } from '../../providers/firebase.service';
 
 @Component({
   selector: 'app-host-page',
@@ -7,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public firebaseService: FirebaseService) { }
 
   ngOnInit() {
   }
 
-  handleText(event: Event, example: string){
+  handleCode(event: Event, example: string){
     console.log("Hello " + example + "!");
+    this.login();
+
+  }
+
+  login(){
+    this.firebaseService.loginAnon();
   }
 }
