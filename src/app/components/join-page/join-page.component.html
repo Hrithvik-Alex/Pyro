@@ -1,3 +1,21 @@
-<p>
-  join-page works!
-</p>
+<div class="super">
+  <div class="container">
+    
+      <div class="title">
+          <img src='../../../assets/logo.png'>
+      </div>
+      <div class="text">
+          <p>Enter your code.</p>
+      </div>
+
+      <input #code placeholder="CODE">
+
+      <button routerLink="" (click)="handleText($event, code.value)">
+        join
+      </button> 
+  </div>
+</div>
+
+
+
+
