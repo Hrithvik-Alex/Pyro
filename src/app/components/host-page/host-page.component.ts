@@ -13,13 +13,13 @@ export class HostPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleCode(event: Event, example: string){
-    console.log("Hello " + example + "!");
-    this.login();
+  handleCode(event: Event, code: string){
+    console.log("Hello " + code + "!");
+    this.login(code);
 
   }
 
-  login(){
-    this.firebaseService.loginAnon();
+  login(code: string){
+    this.firebaseService.loginAnon(true, code);
   }
 }
