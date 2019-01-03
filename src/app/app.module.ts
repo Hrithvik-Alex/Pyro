@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { JoinPageComponent } from './components/join-page/join-page.component';
 import { HostPageComponent } from './components/host-page/host-page.component';
+import { RoomPageComponent } from './components/room-page/room-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     JoinPageComponent,
-    HostPageComponent
+    HostPageComponent,
+    RoomPageComponent
   ],
   imports: [
     BrowserModule,
