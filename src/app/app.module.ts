@@ -9,6 +9,13 @@ import { JoinPageComponent } from './components/join-page/join-page.component';
 import { HostPageComponent } from './components/host-page/host-page.component';
 import { RoomPageComponent } from './components/room-page/room-page.component';
 
+
+import { FirebaseService } from './providers/firebase.service';
+import { AngularFireModule } from '@angular/fire'
+import { AngularFireAuthModule } from '@angular/fire/auth'
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore'
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +27,12 @@ import { RoomPageComponent } from './components/room-page/room-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule.enablePersistence()
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
