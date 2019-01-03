@@ -50,7 +50,18 @@ export class FirebaseService {
     });
   }
 
-  joinSession(user, code: string){
-
+  joinSession(member, code: string){
+  var sessionRef = this.afStore.collection("sessions").doc(`${code}`);
+  sessionRef.get().forEach(function(doc) {
+    // doc.data() is never undefined for query doc snapshots
+    var currentSession = doc.data();
+    var currentMembers: [String] = doc.data().members
+    if(currentMembers.indexOf(member.uid) <= -1){
+      sessionRef.update({members: currentMembers.concat([member.uid])});
+    }
+    else {
+      console.log("You are already in this session.");
+    }
+  });
   }
 }
