@@ -9,8 +9,6 @@ import { JoinPageComponent } from './components/join-page/join-page.component';
 import { HostPageComponent } from './components/host-page/host-page.component';
 import { FirebaseService } from './providers/firebase.service';
 
-
-
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore'

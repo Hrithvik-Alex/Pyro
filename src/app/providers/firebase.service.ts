@@ -41,8 +41,8 @@ export class FirebaseService {
         const sessionRef: AngularFirestoreDocument<any> = this.afStore.doc(`sessions/${code}`);
         const data: Session = {
           code: code,
-          playlist: "Chinguacousy",
-          members: "Glenforest",
+          playlist: null,
+          members: [host.uid],
           hostUID: host.uid
         }
         return sessionRef.set(data, {merge: true});

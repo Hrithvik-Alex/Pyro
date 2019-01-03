@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBxqQRJCuFvMEg04qpD4Q6GRv4HIJ-cxSk",
-    authDomain: "pyro-8943a.firebaseapp.com",
-    databaseURL: "https://pyro-8943a.firebaseio.com",
-    projectId: "pyro-8943a",
-    storageBucket: "pyro-8943a.appspot.com",
-    messagingSenderId: "1067976606494"
+    apiKey: "AIzaSyA4vnh2QAoSZlVIHaTpjZrYGazXGUpxLIo",
+    authDomain: "cmsdatabase-e96f1.firebaseapp.com",
+    databaseURL: "https://cmsdatabase-e96f1.firebaseio.com",
+    projectId: "cmsdatabase-e96f1",
+    storageBucket: "cmsdatabase-e96f1.appspot.com",
+    messagingSenderId: "401604459646"
   }
 };
 
