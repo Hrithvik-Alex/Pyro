@@ -7,13 +7,13 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { JoinPageComponent } from './components/join-page/join-page.component';
 import { HostPageComponent } from './components/host-page/host-page.component';
-import { FirebaseService } from './providers/firebase.service';
+import { RoomPageComponent } from './components/room-page/room-page.component';
 
+
+import { FirebaseService } from './providers/firebase.service';
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireAuthModule } from '@angular/fire/auth'
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore'
-
-
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -21,7 +21,8 @@ import { environment } from '../environments/environment';
     AppComponent,
     HomePageComponent,
     JoinPageComponent,
-    HostPageComponent
+    HostPageComponent,
+    RoomPageComponent
   ],
   imports: [
     BrowserModule,
